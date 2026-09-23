@@ -1,0 +1,35 @@
+?- trace, suma(3, S).
+   Call: (10) suma(3, _3662)
+   Unify: (10) suma(3, _3662)
+   Call: (11) suma(3, 0, _3662)
+   Unify: (11) suma(3, 0, _3662)
+   Call: (12) 3>0
+   Exit: (12) 3>0
+   Call: (12) _7714 is 0+3
+   Exit: (12) 3 is 0+3
+   Call: (12) _8952 is 3+ -1
+   Exit: (12) 2 is 3+ -1
+   Call: (12) suma(2, 3, _3662)
+   Unify: (12) suma(2, 3, _3662)
+   Call: (13) 2>0
+   Exit: (13) 2>0
+   Call: (13) _12634 is 3+2
+   Exit: (13) 5 is 3+2
+   Call: (13) _13872 is 2+ -1
+   Exit: (13) 1 is 2+ -1
+   Call: (13) suma(1, 5, _3662)
+   Unify: (13) suma(1, 5, _3662)
+   Call: (14) 1>0
+   Exit: (14) 1>0
+   Call: (14) _17554 is 5+1
+   Exit: (14) 6 is 5+1
+   Call: (14) _18792 is 1+ -1
+   Exit: (14) 0 is 1+ -1
+   Call: (14) suma(0, 6, _3662)
+   Unify: (14) suma(0, 6, 6)
+   Exit: (14) suma(0, 6, 6)
+   Exit: (13) suma(1, 5, 6)
+   Exit: (12) suma(2, 3, 6)
+   Exit: (11) suma(3, 0, 6)
+   Exit: (10) suma(3, 6)
+S = 6.
